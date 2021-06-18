@@ -52,7 +52,7 @@ body {
 .navbar-project-footer a,
 .navbar-project a {
   color: #353535;
-  font-size: 18px;
+  font-size: 16px;
 }
 .navbar-project-footer .logo-project,
 .navbar-project .logo-project {
@@ -162,13 +162,17 @@ a.tel {
     display: none;
   }
 }
+.navbar-top.navbar-dark .navbar-nav .nav-link {
+  color: #353535;
+}
+
 .user-icon,
 .user-icon-blue,
 .key-blue {
-  width: 42px;
-  height: 42px;
-  min-width: 42px;
-  min-height: 42px;
+  width: 36px;
+  height: 41px;
+  min-width: 36px;
+  min-height: 41px;
   margin-left: 10px;
   background-repeat: no-repeat;
   display: inline-flex;
