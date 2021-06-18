@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link href="./css/custom.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <script src="https://use.fontawesome.com/78f0ef5033.js"></script>
+  <script src="./js/custom.js"></script>
+
+  <title>КОД для размещения на сайте</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark navbar-project bg-blue">
+  <div class="container">
+    <a class="navbar-brand logo-project" href="#">EnigmaKey</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsTop"
+            aria-controls="navbarsTop" aria-expanded="false">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsTop">
+      <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Как это работает</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">О нас</a>
+        </li>
+      </ul>
+      <div class="login">
+        <i class="user-icon"></i>
+        <a href="#">Войти</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <div class="container">
+    <div class="personal-area code-area">
+      <div class="row">
+        <h1>КОД для размещения на сайте</h1>
+        <div class="personal-area__text  m-auto">
+          Разместите указанный код на вашем сайте в том месте, где хотите видеть документ с подписью
+        </div>
+        <form action="" class="code-blocks">
+
+          <div class="mb-5">
+            <div class="copy-btn">
+              <h4>iFrame-код</h4>
+              <a onclick="copytext('copyText')">
+                <i class="fa fa-clone" aria-hidden="true"></i>
+                Копировать код
+              </a>
+            </div>
+            <p class="coupon-alert">Coupon code copied</p>
+            <textarea class="code" id="copyText">&lt;iframe style=&quot;border: 0px;&quot; src=&quot;https://enigma-key.ru/documents/84&quot;
+          width=&quot;650&quot; height=&quot;82&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; align=&quot;left&quot; seamless=&quot;&quot;&gt;
+  &lt;/iframe&gt;</textarea>
+          </div>
+          <div class="mb-3">
+            <div class="copy-btn">
+              <h4>Продвинутый вариант</h4>
+              <a onclick="copytext('copyText1')">
+                <i class="fa fa-clone" aria-hidden="true"></i>
+                Копировать код
+              </a>
+            </div>
+            <textarea class="code code1" id="copyText1">
+&lt;div&gt;
+&lt;img src=&quot;https://enigma-key.ru/static/assets/img/ECP2.png&quot; onmouseover=&quot;toggle(document.getElementById('tooltip84'))&quot; onmouseout=&quot;toggle(document.getElementById('tooltip84'))&quot;&gt;
+       &lt;span id='tooltip84' style  = &quot;display: none; width:auto; background-color: #007acc; color: #fff; text-align: center; border-radius: 6px; font-family: Helvetica, sans-serif;
+          font-size: smaller; position: absolute; z-index: 1;&quot;&gt;
+       &lt;/span&gt;
+       &lt;span&gt;
+         &lt;a href=&quot;https://enigma-key.ru/viewdoc/84&quot; &gt;Положение о промежуточной аттестации.pdf&lt;/a&gt;
+       &lt;/span&gt;
+
+       &lt;span&gt;
+         &lt;a href=&quot;https://enigma-key.ru/download/sign/84&quot; class=&quot;sign-link&quot;&gt; подпись &lt;/a&gt;
+       &lt;/span&gt;
+
+
+   &lt;script defer &gt;
+    function toggle (elem) {
+      elem.style.display = (elem.style.display == 'none') ? '' : 'none'
+    }
+   &lt;/script&gt;
+   &lt;script defer&gt;
+  document.addEventListener(&quot;DOMContentLoaded&quot;, function() {
+    settext(document.getElementById('tooltip84'))
+            </textarea>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row about-us">
+      <h2>О НАС</h2>
+      <div class="about-us__text">
+        Данный сервис разработан и реализуется <a href="#" class="text-nowrap">ООО «ЭнигмаДон»</a>
+      </div>
+      <div class="col about-us__item">
+        <img src="./images/icons/email.svg" alt=""/>
+        <div class="about-us__text">
+          <div>По общим вопросам <a href="mailto:info@831fs.ru">info@831fs.ru</a></div>
+          <div>Техническая поддержка <a href="mailto:support@831fs.ru">support@831fs.ru</a></div>
+        </div>
+      </div>
+      <div class="col about-us__item">
+        <img src="./images/icons/site.svg" alt=""/>
+        <div class="about-us__text">
+          <a href="enigmadon.ru">enigmadon.ru</a>
+        </div>
+      </div>
+      <div class="col about-us__item">
+        <img src="./images/icons/call.svg" alt=""/>
+        <div class="about-us__text">
+          <a class="link-tel" href="tel:89981881818">8 (998) 188-18-18</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</main>
+
+<nav class="navbar navbar-expand-lg navbar-dark navbar-project bg-blue">
+  <div class="container navbar-footer-desktop">
+    <a class="navbar-brand logo-project" href="#">EnigmaKey</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsBottom"
+            aria-controls="navbarsBottom" aria-expanded="false">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsBottom">
+      <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Как это работает</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">О нас</a>
+        </li>
+      </ul>
+      <div class="copyright">
+        Все права защищены © EnigmaKey 2021
+      </div>
+    </div>
+  </div>
+  <div class="navbar-footer-mobile">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Как это работает</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">О нас</a>
+      </li>
+    </ul>
+    <div class="copyright">
+      © EnigmaKey 2021
+    </div>
+  </div>
+</nav>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
+
