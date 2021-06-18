@@ -1,5 +1,32 @@
+@import 'variables';
+
+@font-face {
+  font-family: 'Geometria Medium';
+  src: url('../fonts/Geometria-Medium.eot');
+  src: url('../fonts/Geometria-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Geometria-Medium.woff') format('woff'),
+  url('../fonts/Geometria-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+//font-family: 'Geometria Medium';
+
+@font-face {
+  font-family: 'Formular';
+  src: local('../fonts/Formular Medium'), local('Formular-Medium'),
+  url('../fonts/Formular-Medium.woff2') format('woff2'),
+  url('../fonts/Formular-Medium.woff') format('woff'),
+  url('../fonts/Formular-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+
+
 body{
-  font-family: Roboto;
+  font-family: 'Formular';
+  font-weight: 400;
 }
 @media (min-width: 1400px){
   .container {
@@ -7,24 +34,38 @@ body{
   }
 }
 //navbar-start
-.bg-blue{
-  background-color: #3298DC;
-
+.bg-green-gr{
+  @include green-gradient;
 }
+.bg-green-gr-xl{
+  @include green-gradient;
+
+  @media(min-width:1200px){
+    background-image: none;
+  }
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff;
+}
+
+.navbar-project-footer,
 .navbar-project {
+  font-family: 'Formular';
+  font-weight: 500;
 
   @media(min-width:992px){
     min-height: 90px;
   }
 
   a {
-    color:#fff;
+    color:#353535;
     font-size: 18px;
   }
 
   .logo-project {
-    width: 175px;
-    height: 27px;
+    width: 161px;
+    height: 65px;
     background-image: url(../images/logo.svg);
     background-repeat: no-repeat;
     padding-left: 70px;
@@ -35,19 +76,13 @@ body{
   }
 }
 
-.navbar-dark.navbar-project .navbar-nav .nav-link {
-  color: rgba(255,255,255,1);
+.navbar-project-footer {
+  a {
+    color:#ffffff;
+    font-size: 18px;
+  }
+}
 
-  &:hover {
-    text-decoration: underline;
-  }
-}
-@media (min-width: 992px){
-  .navbar .navbar-nav .nav-link {
-    padding-right: 2.5rem;
-    padding-left: 2.5rem;
-  }
-}
 .navbar-project .navbar-toggler:focus {
   box-shadow: 0 0 0 0.1rem;
 }
@@ -108,12 +143,13 @@ body{
   }
 }
 
-.login {
+.navbar-block,
+.login
+{
   display: flex;
   align-items: center;
-  min-width: 308px;
   justify-content: flex-end;
-  @media(max-width:991px){
+  @media(max-width:1199px){
     justify-content: flex-start;
   }
 
@@ -126,6 +162,19 @@ body{
     }
   }
 }
+a.tel {
+  font-size: 1rem;
+  color: $global_color;
+  font-weight: 700;
+}
+
+@media(max-width:1199px){
+  .navbar-block-tel {
+      display: none;
+  }
+}
+
+
 .user-icon,
 .user-icon-blue,
 .key-blue {
@@ -133,12 +182,12 @@ body{
   height: 42px;
   min-width: 42px;
   min-height: 42px;
-  margin-right: 10px;
+  margin-left: 10px;
   background-repeat: no-repeat;
   display: inline-flex;
 }
 .user-icon {
-  background-image: url(../images/icons/enter.svg);
+  background-image: url(../images/icons/vector.svg);
 }
 .user-icon-blue {
   background-image: url(../images/icons/enter-blue.svg);
@@ -377,8 +426,8 @@ h5  {
 
 .btn-site {
   color:#ffffff;
-  background-color: #3298DC;
-  border-color: #3298DC;
+  background-color: $global_color;
+  border-color: $global_color;
   padding: 14px 28px;
   font-size: 18px;
   font-weight: 500;
@@ -405,7 +454,7 @@ h5  {
 }
 
 .color-blue {
-  color: #3298DC;
+  color: $global_color;
 }
 .color-green {
   color: #008826;
@@ -417,11 +466,11 @@ h5  {
 main {
 
   a {
-    color: #3298DC;
+    color: $global_color;
     text-decoration: underline;
 
     &:hover{
-      color: #3298DC;
+      color: $global_color;
       text-decoration: none;
     }
   }
@@ -491,7 +540,7 @@ main {
   .round-blue {
     font-size: 144px;
     background-color: #ADDAF9;
-    color: #3298DC;
+    color: $global_color;
     border-radius: 50%;
     font-weight: 700;
     width: 320px;
@@ -746,7 +795,9 @@ a.link-tel {
   }
 }
 
-#navbarsBottom .nav-item .login {
+#navbarsBottom .nav-item .navbar-block,
+#navbarsBottom .nav-item .login,
+{
   min-width: auto;
   margin-right: 20px;
   padding-left: 2.5rem;
