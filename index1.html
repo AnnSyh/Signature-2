@@ -16,30 +16,34 @@
 <nav class="navbar navbar-expand-xl navbar-dark navbar-top navbar-project bg-green-gr-xl">
   <div class="container">
     <a class="navbar-brand logo-project" href="#"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsTop"
-            aria-controls="navbarsTop" aria-expanded="false">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+
+    <div class="d-flex">
+      <a href="#" class="d-flex"><i class="enter-icon"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsTop"
+              aria-controls="navbarsTop" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
 
     <div class="collapse navbar-collapse justify-content-between" id="navbarsTop">
       <ul class="navbar-nav mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="#">Как это работает</a>
+          <a class="nav-link nav-link-active" href="#"><span class="link">Как это работает</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Вопросы и ответы</a>
+          <a class="nav-link" href="#"><span class="link">Вопросы и ответы</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Отзывы</a>
+          <a class="nav-link" href="#"><span class="link">Отзывы</span></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">О нас</a>
+        <li class="nav-item mb-40px mb-xl-0">
+          <a class="nav-link" href="#"><span class="link">О нас</span></a>
         </li>
       </ul>
       <div class="navbar-block navbar-block-tel">
         <a class="tel" href="tel:89981881818">8 (998) 188-18-18</a>
       </div>
-      <div class="navbar-block">
+      <div class="navbar-block d-none d-xl-flex">
         <a href="#">Войти</a>
         <i class="user-icon"></i>
       </div>
@@ -128,10 +132,6 @@
 <nav class="navbar navbar-expand-xl navbar-dark navbar-project navbar-project-footer bg-green-gr">
   <div class="container navbar-footer-desktop">
     <a class="navbar-brand logo-project" href="#"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsBottom"
-            aria-controls="navbarsBottom" aria-expanded="false">
-      <span class="navbar-toggler-icon"></span>
-    </button>
 
     <div class="collapse navbar-collapse justify-content-between" id="navbarsBottom">
       <ul class="navbar-nav mb-2 mb-lg-0">
@@ -148,10 +148,9 @@
           <a class="nav-link" href="#">О нас</a>
         </li>
       </ul>
-      <div class="copyright">
-        Все права защищены © PicToDoc 2021
-      </div>
     </div>
+    <div class="copyright">Все права защищены © PicToDoc 2021</div>
+
   </div>
   <div class="navbar-footer-mobile">
     <ul class="navbar-nav">
