@@ -1,26 +1,3 @@
-@font-face {
-  font-family: 'Geometria Medium';
-  src: url("../fonts/Geometria-Medium.eot");
-  src: url("../fonts/Geometria-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Geometria-Medium.woff") format("woff"), url("../fonts/Geometria-Medium.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Formular';
-  src: local("../fonts/Formular Medium"), local("Formular-Medium"), url("../fonts/Formular-Medium.woff2") format("woff2"), url("../fonts/Formular-Medium.woff") format("woff"), url("../fonts/Formular-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
-body {
-  font-family: 'Formular';
-  font-weight: 400;
-}
-
-@media (min-width: 1400px) {
-  .container {
-    max-width: 1242px;
-  }
-}
 .bg-green-gr {
   background: linear-gradient(180deg, #50d5b7 0%, #28c76f 100%);
 }
@@ -149,10 +126,6 @@ a.nav-link {
 }
 
 @media (max-width: 767px) {
-  .navbar-project .navbar-nav li {
-    border-bottom: 1px solid #ADDAF9;
-  }
-
   .navbar-footer-desktop {
     display: none !important;
   }
@@ -217,8 +190,6 @@ a.tel:hover {
 }
 .navbar-top.navbar-dark .navbar-nav .nav-link {
   color: #353535;
-  padding-right: 50px;
-  padding-left: 0;
 }
 @media (max-width: 1199px) {
   .navbar-top.navbar-dark .navbar-nav .nav-link {
@@ -226,6 +197,46 @@ a.tel:hover {
   }
 }
 
+.navbar-project .navbar-nav .nav-link {
+  padding-right: 50px;
+  padding-left: 0;
+}
+
+#navbarsBottom .nav-item .navbar-block,
+#navbarsBottom .nav-item .login {
+  min-width: auto;
+  margin-right: 20px;
+  padding-left: 2.5rem;
+}
+
+#navbarsBottom .nav-item {
+  align-items: center;
+  display: flex;
+}
+
+@font-face {
+  font-family: 'Geometria Medium';
+  src: url("../fonts/Geometria-Medium.eot");
+  src: url("../fonts/Geometria-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Geometria-Medium.woff") format("woff"), url("../fonts/Geometria-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Formular';
+  src: local("../fonts/Formular Medium"), local("Formular-Medium"), url("../fonts/Formular-Medium.woff2") format("woff2"), url("../fonts/Formular-Medium.woff") format("woff"), url("../fonts/Formular-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+body {
+  font-family: 'Formular';
+  font-weight: 400;
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1242px;
+  }
+}
 .user-icon,
 .user-icon-blue,
 .key-blue {
@@ -815,16 +826,4 @@ a.link-tel {
   display: flex;
   flex-direction: column;
   width: 100%;
-}
-
-#navbarsBottom .nav-item .navbar-block,
-#navbarsBottom .nav-item .login {
-  min-width: auto;
-  margin-right: 20px;
-  padding-left: 2.5rem;
-}
-
-#navbarsBottom .nav-item {
-  align-items: center;
-  display: flex;
 }
