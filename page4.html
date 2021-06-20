@@ -10,99 +10,109 @@
   <script src="https://use.fontawesome.com/78f0ef5033.js"></script>
   <title>Вход в личный кабинет</title>
 </head>
-<body>
-<nav class="navbar navbar-expand-lg navbar-dark navbar-project bg-blue">
+<body class="h-100hv">
+<nav class="navbar navbar-expand-xl navbar-dark navbar-top navbar-project bg-green-gr-xl">
   <div class="container">
-    <a class="navbar-brand logo-project" href="#">EnigmaKey</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsTop"
-            aria-controls="navbarsTop" aria-expanded="false">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <a class="navbar-brand logo-project" href="#"></a>
 
-    <div class="collapse navbar-collapse" id="navbarsTop">
-      <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+    <div class="d-flex">
+      <a href="#" class="d-flex"><i class="enter-icon"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsTop"
+              aria-controls="navbarsTop" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse justify-content-between" id="navbarsTop">
+      <ul class="navbar-nav mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="#">Как это работает</a>
+          <a class="nav-link nav-link-active" href="#"><span class="link">Как это работает</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">О нас</a>
+          <a class="nav-link" href="#"><span class="link">Вопросы и ответы</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><span class="link">Отзывы</span></a>
+        </li>
+        <li class="nav-item mb-40px mb-xl-0">
+          <a class="nav-link" href="#"><span class="link">О нас</span></a>
         </li>
       </ul>
-      <div class="login">
-        <i class="user-icon"></i>
+      <div class="navbar-block navbar-block-tel">
+        <a class="tel" href="tel:89981881818">8 (998) 188-18-18</a>
+      </div>
+      <div class="navbar-block d-none d-xl-flex">
         <a href="#">Войти</a>
+        <i class="user-icon"></i>
       </div>
     </div>
   </div>
 </nav>
 
-<main>
+<main class="h-content">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center justify-content-center">
+          <div class="col m-auto m-w-530px d-flex align-items-center">
+            <div class="">
+              <h2 class="w-100 text-center">Вход в личный кабинет</h2>
 
-  <div class="personal-area instructions-area mb-0">
-    <div class="container">
-        <div class="row">
-          <div class="col m-auto col-authorization">
-            <h1>Вход в личный кабинет</h1>
-
-            <div class="box-shadow">
-              <form>
-                <div class="form-row mb-3">
-                  <i class="user-icon-blue"></i>
-                  <span>
+              <div class="box-shadow rounded-20px p-30px">
+                <form>
+                  <div class="form-row mb-3">
+                    <i class="user-icon-green"></i>
+                    <span>
                     <label for="exampleInputEmail1" class="form-label">Электронная почта</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                       <!--                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>-->
                   </span>
-                </div>
-                <div class="form-row mb-3">
-                  <i class="key-blue"></i>
-                  <span>
+                  </div>
+                  <div class="form-row mb-3">
+                    <i class="key-green"></i>
+                    <span>
                     <label for="exampleInputPassword1" class="form-label">Пароль</label>
                     <input type="password" class="form-control" id="exampleInputPassword1">
                   </span>
-                </div>
-                <button type="submit" class="btn btn-site m-auto">Войти</button>
-              </form>
+                  </div>
+                  <button type="submit" class="btn btn-site m-auto">Войти</button>
+                  <div class="text-center mt-3">
+                    <div>У вас нет учетной записи?</div>
+                    <a class="fs-18px" href="#">Регистрация</a>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
     </div>
-  </div>
 </main>
 
-<nav class="navbar navbar-expand-lg navbar-dark navbar-project navbar-project-bottom bg-blue">
+<nav class="navbar navbar-expand-xl navbar-dark navbar-project navbar-project-bottom navbar-project-footer bg-green-gr">
   <div class="container navbar-footer-desktop">
-    <a class="navbar-brand logo-project" href="#">EnigmaKey</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsBottom"
-            aria-controls="navbarsBottom" aria-expanded="false">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <a class="navbar-brand logo-project" href="#"></a>
 
-    <div class="collapse navbar-collapse" id="navbarsBottom">
-      <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+    <div class="collapse navbar-collapse justify-content-between" id="navbarsBottom">
+      <ul class="navbar-nav mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link" href="#">Как это работает</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Вопросы и ответы</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Отзывы</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">О нас</a>
         </li>
       </ul>
-      <div class="copyright">
-        Все права защищены © EnigmaKey 2021
-      </div>
     </div>
+    <div class="copyright">Все права защищены © PicToDoc 2021</div>
+
   </div>
   <div class="navbar-footer-mobile">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Как это работает</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">О нас</a>
-      </li>
-    </ul>
+    <a class="navbar-brand logo-project mb-sm-3" href="#"></a>
     <div class="copyright">
-      © EnigmaKey 2021
+      Все права защищены © PicToDoc 2021
     </div>
   </div>
 </nav>
