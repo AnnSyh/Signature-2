@@ -121,6 +121,12 @@ a.nav-link {
     z-index: 1030;
   }
 }
+@media (max-width: 330px) {
+  .navbar-brand {
+    border: 1px solid red;
+    margin-right: 0;
+  }
+}
 .navbar-footer-mobile {
   display: none;
 }
@@ -767,6 +773,13 @@ a.tel:hover {
 
 .h-content {
   height: calc(100% - 110px - 81px);
+  overflow-y: auto;
+}
+@media (max-width: 767px) {
+  .h-content {
+    height: calc(100% - 134px - 81px);
+    margin: 0px;
+  }
 }
 
 .mr-10px {

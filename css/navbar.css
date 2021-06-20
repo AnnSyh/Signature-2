@@ -121,6 +121,12 @@ a.nav-link {
     z-index: 1030;
   }
 }
+@media (max-width: 330px) {
+  .navbar-brand {
+    border: 1px solid red;
+    margin-right: 0;
+  }
+}
 .navbar-footer-mobile {
   display: none;
 }

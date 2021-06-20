@@ -22,6 +22,13 @@
 
 .h-content {
   height: calc(100% - 110px - 81px);
+  overflow-y: auto;
+}
+@media (max-width: 767px) {
+  .h-content {
+    height: calc(100% - 134px - 81px);
+    margin: 0px;
+  }
 }
 
 .mr-10px {
