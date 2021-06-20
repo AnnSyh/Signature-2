@@ -123,7 +123,6 @@ a.nav-link {
 }
 @media (max-width: 330px) {
   .navbar-brand {
-    border: 1px solid red;
     margin-right: 0;
   }
 }
@@ -202,6 +201,10 @@ a.tel:hover {
   .navbar-top.navbar-dark .navbar-nav .nav-link {
     color: #fff;
   }
+}
+
+.navbar-top .navbar-block a {
+  font-weight: 600;
 }
 
 .navbar-project .navbar-nav .nav-link {
@@ -749,6 +752,10 @@ a.tel:hover {
   cursor: pointer;
 }
 
+label {
+  font-size: 18px;
+}
+
 .fs-18px {
   font-size: 18px;
 }
@@ -765,6 +772,10 @@ a.tel:hover {
 
 .m-w-530px {
   max-width: 530px;
+}
+
+.m-w-900px {
+  max-width: 900px;
 }
 
 .h-100hv {
@@ -853,7 +864,8 @@ body {
 }
 
 .user-icon-green {
-  background-image: url(../images/icons/enter-green.svg);
+  background-image: url(../images/icons/user-icon-green.svg);
+  margin-left: 10px;
 }
 
 .key-green {

@@ -123,7 +123,6 @@ a.nav-link {
 }
 @media (max-width: 330px) {
   .navbar-brand {
-    border: 1px solid red;
     margin-right: 0;
   }
 }
@@ -202,6 +201,10 @@ a.tel:hover {
   .navbar-top.navbar-dark .navbar-nav .nav-link {
     color: #fff;
   }
+}
+
+.navbar-top .navbar-block a {
+  font-weight: 600;
 }
 
 .navbar-project .navbar-nav .nav-link {

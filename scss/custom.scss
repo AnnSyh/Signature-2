@@ -8,6 +8,7 @@
 @import 'personal-area-block';
 @import 'uploaded-documents-block';
 @import 'code-area-block';
+@import 'form';
 @import 'common-styles-additional';
 
 
@@ -59,7 +60,8 @@ body{
   background-image: url(../images/icons/vector.svg);
 }
 .user-icon-green {
-  background-image: url(../images/icons/enter-green.svg);
+  background-image: url(../images/icons/user-icon-green.svg);
+  margin-left: 10px;
 }
 .key-green {
   background-image: url(../images/icons/key-green.svg);

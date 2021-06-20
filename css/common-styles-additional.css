@@ -16,6 +16,10 @@
   max-width: 530px;
 }
 
+.m-w-900px {
+  max-width: 900px;
+}
+
 .h-100hv {
   height: 100vh;
 }
