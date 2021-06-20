@@ -1,3 +1,5 @@
+@import 'variables';
+
 //navbar-start
 .bg-green-gr{
   @include green-gradient;
@@ -37,12 +39,12 @@
   }
 }
 
-.navbar-project-footer {
-  a {
-    color:#ffffff;
-    font-size: 18px;
-  }
-}
+//.navbar-project-footer {
+//  a {
+//    color:#ffffff;
+//    font-size: 16px;
+//  }
+//}
 
 .navbar-project .navbar-toggler:focus {
   box-shadow: 0 0 0 0.1rem;
@@ -121,16 +123,9 @@ a.nav-link {
   }
 }
 
-
-
-
-
 .mb-40px{
   margin-bottom: 40px;
 }
-
-
-
 
 @media(min-width:992px){
   .navbar-project-bottom  {
@@ -213,6 +208,7 @@ a.tel {
 }
 .navbar-top.navbar-dark .navbar-nav .nav-link {
   color: #353535;
+  font-weight: 600;
   @media (max-width:1199px) {
     color: #fff;
   }

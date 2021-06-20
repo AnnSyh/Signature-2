@@ -1,0 +1,24 @@
+.about-us {
+  padding-top: 107px;
+  padding-bottom: 106px;
+
+  @media(max-width:767px){
+    flex-direction: column;
+  }
+
+  &__item:first-child { border: 1px solid red;
+
+  }
+
+  &__item img {
+    display: flex;
+    margin: 67px auto 36px auto;
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+  }
+}
