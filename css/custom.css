@@ -176,7 +176,7 @@ a.nav-link {
 
 a.tel {
   font-size: 1rem;
-  color: #50d5b7;
+  color: #28c76f;
   font-weight: 700;
 }
 a.tel:hover {
@@ -910,12 +910,8 @@ h5 {
   display: flex;
 }
 
-.color-blue {
-  color: #50d5b7;
-}
-
 .color-green {
-  color: #008826;
+  color: #28c76f;
 }
 
 .color-gray {
@@ -970,7 +966,6 @@ main .item-error {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 100px;
 }
 main .item-error h1 {
   text-align: center;
@@ -987,16 +982,17 @@ main .item-error h1 {
   }
 }
 main .item-error .about-us__text {
-  max-width: 550px;
+  max-width: 570px;
 }
 main .item-error .btn-site {
   width: 230px;
-  margin: 37px auto 100px auto;
+  margin: 37px auto 0px auto;
 }
-main .round-blue {
+main .round-blue,
+main .round-green {
   font-size: 144px;
   background-color: #ADDAF9;
-  color: #50d5b7;
+  color: #28c76f;
   border-radius: 50%;
   font-weight: 700;
   width: 320px;
@@ -1005,6 +1001,10 @@ main .round-blue {
   align-items: center;
   justify-content: center;
   margin-bottom: 34px;
+}
+main .round-green {
+  background: #28C76F33;
+  color: #28c76f;
 }
 
 .icon-button {

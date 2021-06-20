@@ -8,68 +8,90 @@
   <link href="./css/custom.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   <script src="https://use.fontawesome.com/78f0ef5033.js"></script>
-  <title>500</title>
+  <title>404</title>
 </head>
-<body>
-<nav class="navbar navbar-expand-lg navbar-dark navbar-project bg-blue">
+<body class="h-100hv">
+<nav class="navbar navbar-expand-xl navbar-dark navbar-top navbar-project bg-green-gr-xl">
   <div class="container">
-    <a class="navbar-brand logo-project" href="#">EnigmaKey</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsTop"
-            aria-controls="navbarsTop" aria-expanded="false">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <a class="navbar-brand logo-project" href="#"></a>
 
-    <div class="collapse navbar-collapse" id="navbarsTop">
-      <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+    <div class="d-flex">
+      <a href="#" class="d-flex"><i class="enter-icon"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsTop"
+              aria-controls="navbarsTop" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse justify-content-between" id="navbarsTop">
+      <ul class="navbar-nav mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="#">Как это работает</a>
+          <a class="nav-link nav-link-active" href="#"><span class="link">Как это работает</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">О нас</a>
+          <a class="nav-link" href="#"><span class="link">Вопросы и ответы</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><span class="link">Отзывы</span></a>
+        </li>
+        <li class="nav-item mb-40px mb-xl-0">
+          <a class="nav-link" href="#"><span class="link">О нас</span></a>
         </li>
       </ul>
-      <div class="login">
-        <i class="user-icon"></i>
+      <div class="navbar-block navbar-block-tel">
+        <a class="tel" href="tel:89981881818">8 (998) 188-18-18</a>
+      </div>
+      <div class="navbar-block d-none d-xl-flex">
         <a href="#">Войти</a>
+        <i class="user-icon"></i>
       </div>
     </div>
   </div>
 </nav>
 
-<main>
-  <div class="container">
-        <div class="item-error">
-          <div class="round-blue">500</div>
-          <h1>ОШИБКА СЕРВЕРА</h1>
-          <div class="about-us__text">
-            На сервере возникла непредвиденная ошибка.
-            Попробуйте обновить страницу или вернуться на главную страницу
-          </div>
-          <a href="index.html" class="btn btn-site button__mb">На главную</a>
+<main class="h-content">
+  <div class="container h-100">
+    <div class="row h-100 align-items-center justify-content-center">
+      <div class="col m-auto item-error d-flex align-items-center">
+        <div class="round-green">500</div>
+        <h1>Ошибка сервера</h1>
+        <div class="about-us__text">
+          На сервере возникла непредвиденная ошибка.
+          Попробуйте обновить страницу или вернуться на главную страницу
         </div>
+        <a href="index.html" class="btn btn-site">На главную</a>
+      </div>
+    </div>
   </div>
 </main>
 
-<nav class="navbar navbar-expand-lg navbar-dark navbar-project bg-blue">
-  <div class="container">
-    <a class="navbar-brand logo-project" href="#">EnigmaKey</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsBottom"
-            aria-controls="navbarsBottom" aria-expanded="false">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+<nav class="navbar navbar-expand-xl navbar-dark navbar-project navbar-project-bottom navbar-project-footer bg-green-gr">
+  <div class="container navbar-footer-desktop">
+    <a class="navbar-brand logo-project" href="#"></a>
 
-    <div class="collapse navbar-collapse" id="navbarsBottom">
-      <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+    <div class="collapse navbar-collapse justify-content-between" id="navbarsBottom">
+      <ul class="navbar-nav mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link" href="#">Как это работает</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Вопросы и ответы</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Отзывы</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">О нас</a>
         </li>
       </ul>
-      <div class="copyright">
-        Все права защищены © EnigmaKey 2021
-      </div>
+    </div>
+    <div class="copyright">Все права защищены © PicToDoc 2021</div>
+
+  </div>
+  <div class="navbar-footer-mobile">
+    <a class="navbar-brand logo-project mb-sm-3" href="#"></a>
+    <div class="copyright">
+      Все права защищены © PicToDoc 2021
     </div>
   </div>
 </nav>
