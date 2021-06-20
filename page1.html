@@ -19,26 +19,39 @@
   <title>ЛИЧНЫЙ КАБИНЕТ</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark navbar-project bg-blue">
+<nav class="navbar navbar-expand-xl navbar-dark navbar-top navbar-project bg-green-gr-xl">
   <div class="container">
-    <a class="navbar-brand logo-project" href="#">EnigmaKey</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsTop"
-            aria-controls="navbarsTop" aria-expanded="false">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <a class="navbar-brand logo-project" href="#"></a>
 
-    <div class="collapse navbar-collapse" id="navbarsTop">
-      <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+    <div class="d-flex">
+      <a href="#" class="d-flex"><i class="enter-icon"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsTop"
+              aria-controls="navbarsTop" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse justify-content-between" id="navbarsTop">
+      <ul class="navbar-nav mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="#">Как это работает</a>
+          <a class="nav-link nav-link-active" href="#"><span class="link">Как это работает</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">О нас</a>
+          <a class="nav-link" href="#"><span class="link">Вопросы и ответы</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><span class="link">Отзывы</span></a>
+        </li>
+        <li class="nav-item mb-40px mb-xl-0">
+          <a class="nav-link" href="#"><span class="link">О нас</span></a>
         </li>
       </ul>
-      <div class="login">
-        <i class="user-icon"></i>
+      <div class="navbar-block navbar-block-tel">
+        <a class="tel" href="tel:89981881818">8 (998) 188-18-18</a>
+      </div>
+      <div class="navbar-block d-none d-xl-flex">
         <a href="#">Войти</a>
+        <i class="user-icon"></i>
       </div>
     </div>
   </div>
@@ -47,15 +60,31 @@
 <main>
   <form class="container">
     <div class="personal-area">
-      <div class="row">
         <h1>ЛИЧНЫЙ КАБИНЕТ</h1>
-<!--        <div class="personal-area__text  w-50  m-auto">-->
-<!--          Загружаемый документ должен иметь имя по фактическому наименованию на русском языке-->
-<!--        </div>-->
-      </div>
+
+        <h3>Тарифный план</h3>
+        <div class="row tariff-plan box-shadow">
+          <div class="col text-center text-xl-left">
+            <span class="text-nowrap">Ваш тарифный план</span>
+            <div class="tariff-plan__text text-tariff-plan mt-3">Оптимальный</div>
+          </div>
+          <div class="col text-center text-xl-left">
+            <span class="text-nowrap">Баланс на счете</span>
+            <div class="text-tariff-plan mt-3 text-nowrap">1 427,24 ₽</div>
+          </div>
+          <div class="col tariff-plan__btns align-self-center">
+            <button class="btn btn-site-violet mr-10px mb-3 mb-md-0">Сменить тариф</button>
+            <button class="btn btn-site">Пополнить баланс</button>
+          </div>
+        </div>
+
+        <h3>Загрузка документа</h3>
+        <div class="personal-area__text  w-50  m-auto">
+          Загружаемый документ должен иметь имя по фактическому наименованию на русском языке
+        </div>
       <div class="buttons">
         <!-- -->
-        <div class="box-shadow personal-area__text">
+        <div class="box-shadow rounded-20px personal-area__text">
           Загрузить документ с <b>раздельной</b> подписью
           <div class="upload-file__wrapper btn btn-site m-auto mt-4"
                data-bs-toggle="tooltip"
@@ -76,7 +105,7 @@
           </div>
         </div>
        <!-- -->
-        <div class="box-shadow personal-area__text">
+        <div class="box-shadow rounded-20px personal-area__text">
           Загрузить документ с <b>простой</b> подписью
           <div class="upload-file__wrapper btn btn-site m-auto mt-4"
                data-bs-toggle="tooltip"
@@ -181,23 +210,19 @@
     </div>
   </form>
 
-  <div class="container">
+  <div class="container personal-area">
     <div class="row about-us">
       <h2>О НАС</h2>
-      <div class="about-us__text">
-        Данный сервис разработан и реализуется <a href="#" class="text-nowrap">ООО «ЭнигмаДон»</a>
-      </div>
       <div class="col about-us__item">
         <img src="./images/icons/email.svg" alt=""/>
         <div class="about-us__text">
-          <div>По общим вопросам <a href="mailto:info@831fs.ru">info@831fs.ru</a></div>
-          <div>Техническая поддержка <a href="mailto:support@831fs.ru">support@831fs.ru</a></div>
+          <div>По общим вопросам <br><a href="mailto:info@831fs.ru">info@831fs.ru</a></div>
         </div>
       </div>
       <div class="col about-us__item">
         <img src="./images/icons/site.svg" alt=""/>
         <div class="about-us__text">
-          <a href="enigmadon.ru">enigmadon.ru</a>
+          <div>Техническая поддержка <br><a href="mailto:support@831fs.ru">support@831fs.ru</a></div>
         </div>
       </div>
       <div class="col about-us__item">
@@ -212,39 +237,33 @@
 
 </main>
 
-<nav class="navbar navbar-expand-lg navbar-dark navbar-project bg-blue">
+<nav class="navbar navbar-expand-xl navbar-dark navbar-project navbar-project-footer bg-green-gr">
   <div class="container navbar-footer-desktop">
-    <a class="navbar-brand logo-project" href="#">EnigmaKey</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsBottom"
-            aria-controls="navbarsBottom" aria-expanded="false">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <a class="navbar-brand logo-project" href="#"></a>
 
-    <div class="collapse navbar-collapse" id="navbarsBottom">
-      <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+    <div class="collapse navbar-collapse justify-content-between" id="navbarsBottom">
+      <ul class="navbar-nav mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link" href="#">Как это работает</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Вопросы и ответы</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Отзывы</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">О нас</a>
         </li>
       </ul>
-      <div class="copyright">
-        Все права защищены © EnigmaKey 2021
-      </div>
     </div>
+    <div class="copyright">Все права защищены © PicToDoc 2021</div>
+
   </div>
   <div class="navbar-footer-mobile">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Как это работает</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">О нас</a>
-      </li>
-    </ul>
+    <a class="navbar-brand logo-project mb-sm-3" href="#"></a>
     <div class="copyright">
-      © EnigmaKey 2021
+      Все права защищены © PicToDoc 2021
     </div>
   </div>
 </nav>

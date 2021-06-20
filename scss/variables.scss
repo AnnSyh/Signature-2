@@ -8,6 +8,10 @@
 @mixin green-gradient {
   background: linear-gradient(180deg, #50D5B7 0%, #28C76F 100%);
 }
+@mixin violet-gradient {
+  background: linear-gradient(180deg, #759ED7 0%, #325C96 100%);
+
+}
 
 // form
 $global_color: #50D5B7;

@@ -1,9 +1,10 @@
 @import 'variables';
 
+.btn-site-violet,
 .btn-site {
   position: relative;
   color:#ffffff;
-  @include green-gradient;
+  //@include green-gradient;
   padding: 12px 25px;
   font-size: 18px;
   font-weight: 700;
@@ -16,20 +17,34 @@
     width: 100%;
     display: block;
     height: 6px;
-    background: #20AE60;
+    //background: #20AE60;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
     position: absolute;
     top: 100%;
     left: 0;
   }
-
-
   &:hover {
     color:#ffffff;
-    text-decoration: underline;
   }
   @media(max-width:370px){
     min-width: 190px;
   }
+}
+.btn-site {
+  @include green-gradient;
+
+  &:after {
+    background: #20AE60;
+  }
+
+}
+.btn-site-violet {
+  @include violet-gradient;
+
+  &:after {
+    background: #18417A;
+
+  }
+
 }

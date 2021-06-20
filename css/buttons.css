@@ -1,7 +1,7 @@
+.btn-site-violet,
 .btn-site {
   position: relative;
   color: #ffffff;
-  background: linear-gradient(180deg, #50d5b7 0%, #28c76f 100%);
   padding: 12px 25px;
   font-size: 18px;
   font-weight: 700;
@@ -9,24 +9,39 @@
   justify-content: center;
   border-radius: 5px;
 }
+.btn-site-violet:after,
 .btn-site:after {
   content: "";
   width: 100%;
   display: block;
   height: 6px;
-  background: #20AE60;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   position: absolute;
   top: 100%;
   left: 0;
 }
+.btn-site-violet:hover,
 .btn-site:hover {
   color: #ffffff;
-  text-decoration: underline;
 }
 @media (max-width: 370px) {
+  .btn-site-violet,
   .btn-site {
     min-width: 190px;
   }
+}
+
+.btn-site {
+  background: linear-gradient(180deg, #50d5b7 0%, #28c76f 100%);
+}
+.btn-site:after {
+  background: #20AE60;
+}
+
+.btn-site-violet {
+  background: linear-gradient(180deg, #759ed7 0%, #325c96 100%);
+}
+.btn-site-violet:after {
+  background: #18417A;
 }

@@ -33,5 +33,31 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: '../fonts/Formular';
+  src: url('../fonts/Formular-Medium.eot');
+  src: local('../fonts/Formular Medium'), local('Formular-Medium'),
+  url('../fonts/Formular-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Formular-Medium.woff2') format('woff2'),
+  url('../fonts/Formular-Medium.woff') format('woff'),
+  url('../fonts/Formular-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '../fonts/Formular';
+  src: url('../fonts/Formular-Black.eot');
+  src: local('../fonts/Formular Black'), local('Formular-Black'),
+  url('../fonts/Formular-Black.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Formular-Black.woff2') format('woff2'),
+  url('../fonts/Formular-Black.woff') format('woff'),
+  url('../fonts/Formular-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+
 
 

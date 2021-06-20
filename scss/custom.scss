@@ -5,6 +5,8 @@
 @import 'service-block';
 @import 'how-it-works-block';
 @import 'about-us-block';
+@import 'personal-area-block';
+@import 'uploaded-documents-block';
 @import 'common-styles-additional';
 
 
@@ -58,6 +60,10 @@ body{
 
 h1,h2,h3 {
   font-family: "Geometria Medium";
+  text-transform: uppercase;
+  font-size: 2.625rem;
+  font-weight: 700;
+  line-height: 50px;
 }
 
 
@@ -93,28 +99,28 @@ h5  {
 }
 
 
-.personal-area {
-  margin-bottom: 96px;
-
-  h1 {
-    justify-content: center;
-    display: flex;
-    margin-top: 102px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    @media(max-width:480px){
-      margin-top: 50px;
-      margin-bottom: 20px !important;
-    }
-  }
-
-  &__text {
-    text-align: center;
-    font-size: 18px;
-    line-height: 20px;
-    color: #444444;
-  }
-}
+//.personal-area {
+//  margin-bottom: 96px;
+//
+//  h1 {
+//    justify-content: center;
+//    display: flex;
+//    margin-top: 102px;
+//    margin-bottom: 20px;
+//    text-transform: uppercase;
+//    @media(max-width:480px){
+//      margin-top: 50px;
+//      margin-bottom: 20px !important;
+//    }
+//  }
+//
+//  &__text {
+//    text-align: center;
+//    font-size: 18px;
+//    line-height: 20px;
+//    color: #444444;
+//  }
+//}
 
 .code-area {
   h1 {
@@ -186,6 +192,10 @@ h5  {
 }
 
 main {
+
+  @media (max-width:575px) {
+    margin: 0 12px;
+  }
 
   a {
     color: #78dca5;
@@ -355,89 +365,7 @@ main {
 }
 
 
-.table-doc {
-  border-spacing: 10px;
-  border-collapse: separate;
 
-  th {
-    font-size: 18px;
-  }
-  td {
-    font-size: 16px;
-  }
-
-  i.fa-file-text-o,
-  i.fa-link {
-    margin-right: 10px;
-  }
-}
-.table-doc>:not(:last-child)>:last-child>* {
-  //border-bottom-color: red;
-  border-bottom-color: transparent;
-}
-.table-doc>:not(caption)>*>* {
-  padding: .9rem .5rem;
-  border-bottom-width: 0;
-}
-
-.table-doc tbody tr{
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-//адаптивность таблицы
-@media screen and (max-width: 505px) {
-  table.table-doc {
-    border: 0;
-  }
-
-  table.table-doc thead {
-    border: none;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-  }
-
-  table.table-doc tr {
-    border-bottom: 1px solid #ddd;
-    display: block;
-    margin-bottom: 30px;
-  }
-
-  table.table-doc td {
-    display: block;
-    text-align: right;
-
-    span {
-      display: inline-block;
-      width: 50%;
-      text-align: start;
-      font-size: 14px;
-    }
-  }
-
-  table.table-doc td::before {
-    content: attr(data-label);
-    float: left;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-
-  table.table-doc td:last-child {
-    border-bottom: 0;
-  }
-}
-@media(max-width:345px) {
-  table.table-doc td::before {
-    font-size: 14px;
-  }
-  table.table-doc td span {
-    width: 53%;
-  }
-}
 
 .without-data-label {
   margin: auto;

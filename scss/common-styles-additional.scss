@@ -1,3 +1,23 @@
+
+.text-tariff-plan {
+  font-size: 24px;
+  font-weight: 900;
+  color: #28C76F;
+}
+
+.mr-10px {
+  margin-right: 10px;
+}
+.rounded-20px {
+  border-radius: 20px;
+}
+
+@media (min-width: 992px){
+  .text-lg-left {
+    text-align: left!important;
+  }
+}
+
 @media (max-width: 480px){
 
   .d-xs-none {
