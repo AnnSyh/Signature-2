@@ -83,7 +83,6 @@
     line-height: 22px;
     font-weight: 300;
     @media(max-width:768px){
-      padding: 0px 160px;
       text-align: center;
     }
     @media(max-width:480px){
@@ -93,5 +92,11 @@
 
   .how-it-works__text {
     color: #ffffff;
+    @media(max-width:768px){
+      padding: 0px 160px;
+    }
+    @media(max-width:480px){
+      padding: 0px;
+    }
   }
 }

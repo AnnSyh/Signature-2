@@ -435,7 +435,6 @@ a.tel:hover {
 }
 @media (max-width: 768px) {
   .how-it-works__text {
-    padding: 0px 160px;
     text-align: center;
   }
 }
@@ -446,6 +445,16 @@ a.tel:hover {
 }
 .how-it-works .how-it-works__text {
   color: #ffffff;
+}
+@media (max-width: 768px) {
+  .how-it-works .how-it-works__text {
+    padding: 0px 160px;
+  }
+}
+@media (max-width: 480px) {
+  .how-it-works .how-it-works__text {
+    padding: 0px;
+  }
 }
 
 .about-us {
