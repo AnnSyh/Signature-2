@@ -691,8 +691,10 @@ a.tel:hover {
   padding-top: 80px;
   padding-bottom: 90px;
 }
-.code-area .about-us__item img {
-  margin-top: -12px;
+@media (min-width: 768px) {
+  .code-area .about-us__item img {
+    margin-top: -12px;
+  }
 }
 
 .code-blocks {
@@ -894,17 +896,10 @@ h5 {
   margin-bottom: 36px;
 }
 
-.instructions-area h1 {
-  text-transform: uppercase;
-  font-size: 36px;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 80px;
-}
-.instructions-area .carousel-control-prev-icon {
+.carousel-control-prev-icon {
   background-image: url("../images/icons/prev-arrow.svg");
 }
-.instructions-area .carousel-control-next-icon {
+.carousel-control-next-icon {
   background-image: url("../images/icons/next-arrow.svg");
 }
 

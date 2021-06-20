@@ -116,32 +116,14 @@ h5  {
   }
 }
 
-.instructions-area {
 
-  h1 {
-    text-transform: uppercase;
-    font-size: 36px;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 80px;
+.carousel-control{
+  &-prev-icon {
+    background-image: url('../images/icons/prev-arrow.svg');
   }
-
-
-  //.carousel { border: 1px solid red;
-  //  position: relative;
-  //  max-width: 1056px;
-  //  margin: auto;
-  //}
-
-  .carousel-control{
-    &-prev-icon {
-      background-image: url('../images/icons/prev-arrow.svg');
-    }
-    &-next-icon {
-      background-image:  url('../images/icons/next-arrow.svg');;
-    }
+  &-next-icon {
+    background-image:  url('../images/icons/next-arrow.svg');;
   }
-
 }
 
 .box-shadow {

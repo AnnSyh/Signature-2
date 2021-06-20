@@ -19,8 +19,10 @@
   padding-top: 80px;
   padding-bottom: 90px;
 }
-.code-area .about-us__item img {
-  margin-top: -12px;
+@media (min-width: 768px) {
+  .code-area .about-us__item img {
+    margin-top: -12px;
+  }
 }
 
 .code-blocks {

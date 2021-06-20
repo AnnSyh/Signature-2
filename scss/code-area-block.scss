@@ -22,8 +22,10 @@
     padding-top: 80px;
     padding-bottom: 90px;
   }
-  .about-us__item img {
-    margin-top: -12px;
+  @media(min-width:768px){
+    .about-us__item img {
+      margin-top: -12px;
+    }
   }
 }
 
