@@ -1171,7 +1171,7 @@ main ul.city-list li {
 }
 @media (max-width: 480px) {
   main ul.city-list li {
-    width: 49%;
+    width: 47%;
   }
 }
 main .item-error {
