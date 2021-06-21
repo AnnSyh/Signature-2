@@ -1,0 +1,21 @@
+.comment {
+  margin-top: 95px;
+  margin-bottom: 95px;
+}
+.comment-block {
+  max-width: 804px;
+}
+.comment-item {
+  font-size: 18px;
+  background-color: #f5f7fa;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.comment-item__title {
+  color: #28C76F;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  margin-bottom: 10px;
+}

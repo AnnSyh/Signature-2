@@ -307,6 +307,72 @@ a.tel:hover {
   background: #18417A;
 }
 
+.accordion-mb {
+  margin-bottom: 93px;
+}
+
+.accordion-green .accordion-item {
+  margin-bottom: 30px;
+  border: none;
+}
+@media (max-width: 480px) {
+  .accordion-green .accordion-item {
+    margin-bottom: 20px;
+  }
+}
+.accordion-green .accordion-button {
+  position: relative;
+  color: #ffffff;
+  padding: 4px 20px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 10px !important;
+  background: linear-gradient(180deg, #50d5b7 0%, #28c76f 100%);
+}
+@media (max-width: 480px) {
+  .accordion-green .accordion-button {
+    line-height: 22px;
+    padding: 15px 10px;
+  }
+}
+.accordion-green .accordion-button:not(.collapsed)::after {
+  background-image: url(../images/icons/accordion-arrow-down.svg);
+  transform: rotate(180deg);
+}
+.accordion-green .accordion-button:after {
+  flex-shrink: 0;
+  width: 29px;
+  height: 16px;
+  margin-left: auto;
+  content: "";
+  background-image: url(../images/icons/accordion-arrow-down.svg);
+  background-repeat: no-repeat;
+  transition: transform .2s ease-in-out;
+  background-size: auto;
+}
+.accordion-green .accordion-button:hover {
+  color: #ffffff;
+}
+.accordion-green .accordion-button:focus {
+  z-index: 3;
+  border-color: transparent;
+  outline: 0;
+  box-shadow: none;
+}
+.accordion-green .accordion-button.accordion-button:not(.collapsed) {
+  color: #ffffff;
+  box-shadow: none;
+}
+
+.accordion-body {
+  border: 2px solid #28C76F;
+}
+
+.accordion-collapse {
+  position: relative;
+  top: -7px;
+}
+
 .service {
   margin: 10px 0 120px 0;
 }
@@ -756,6 +822,85 @@ label {
   font-size: 18px;
 }
 
+.form-control {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 22px;
+  color: #353535;
+  background-color: #fff;
+  border: 1px solid rgba(50, 92, 150, 0.2);
+}
+.form-control:focus {
+  border: 1px solid #28C76F !important;
+  box-shadow: none !important;
+}
+
+.my-form {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.comment {
+  margin-top: 95px;
+  margin-bottom: 95px;
+}
+.comment-block {
+  max-width: 804px;
+}
+.comment-item {
+  font-size: 18px;
+  background-color: #f5f7fa;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.comment-item__title {
+  color: #28C76F;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+
+.card {
+  border-radius: 10px 10px 0px 0px;
+  border: 2px solid #28C76F;
+  overflow: hidden;
+}
+.card-header {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 11px 20px;
+  margin-bottom: 0;
+  background: linear-gradient(180deg, #50d5b7 0%, #28c76f 100%);
+  border-radius: 10px 10px 0px 0px;
+}
+.card-body {
+  padding: 18px 22px;
+}
+.card-text {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.carousel-indicators {
+  bottom: -60px;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: 2px solid #28C76F;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+  background: linear-gradient(180deg, #50d5b7 0%, #28c76f 100%);
+}
+
 .fs-18px {
   font-size: 18px;
 }
@@ -868,6 +1013,10 @@ body {
   margin-left: 10px;
 }
 
+form .user-icon-green {
+  margin-left: 0px;
+}
+
 .key-green {
   background-image: url(../images/icons/key-green.svg);
 }
@@ -884,6 +1033,19 @@ h1, h2, h3 {
   line-height: 50px;
 }
 
+@media (max-width: 991px) {
+  h1 {
+    text-align: center;
+    margin-bottom: 68px;
+  }
+}
+@media (max-width: 767px) {
+  h1 {
+    font-size: 180%;
+    line-height: 1.3;
+  }
+}
+
 h2 {
   font-weight: bold;
   font-size: 36px;
@@ -891,6 +1053,11 @@ h2 {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 55px;
+}
+@media (max-width: 480px) {
+  h2 {
+    font-size: 28px;
+  }
 }
 
 h3 {
@@ -900,6 +1067,12 @@ h3 {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 63px;
+}
+@media (max-width: 480px) {
+  h3 {
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
 
 h4 {
@@ -986,6 +1159,20 @@ main ul.doc-list li .fa-xl {
   font-size: 1.7em;
   line-height: .75em;
   vertical-align: -15%;
+}
+main ul.city-list {
+  font-size: 16px;
+  line-height: 18px;
+  list-style-type: none;
+}
+main ul.city-list li {
+  display: inline-block;
+  width: 32%;
+}
+@media (max-width: 480px) {
+  main ul.city-list li {
+    width: 49%;
+  }
 }
 main .item-error {
   display: flex;
